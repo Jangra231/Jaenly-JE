@@ -13,7 +13,7 @@ export interface FormState {
 
 export async function submitForm(
   prevState: FormState,
-  formData: FormData
+  formData: FormData,
 ): Promise<FormState> {
   const name = String(formData.get("name") || "").trim();
   const email = String(formData.get("email") || "").trim();
@@ -33,19 +33,31 @@ export async function submitForm(
   if (!message) errors.message = "Please type a message";
 
   if (Object.keys(errors).length > 0) {
-    return { success: false, message: "Please fix the highlighted fields.", errors };
+    return {
+      success: false,
+      message: "Please fix the highlighted fields.",
+      errors,
+    };
   }
 
   // Save to MongoDB
   try {
     await dbConnect();
-    const enquiry = new Enquiry({ name, email, company, phone, subject, message });
+    const enquiry = new Enquiry({
+      name,
+      email,
+      company,
+      phone,
+      subject,
+      message,
+    });
     await enquiry.save();
   } catch (error) {
     console.error("Failed to save enquiry to MongoDB:", error);
     return {
       success: false,
-      message: "We couldn't save your enquiry right now. Please try again later.",
+      message:
+        "We couldn't save your enquiry right now. Please try again later.",
     };
   }
 
@@ -75,7 +87,7 @@ async function sendEnquiryEmail(enquiry: {
 
   if (!user || !pass) {
     console.warn(
-      "[EMAIL BYPASSED] SMTP credentials are not configured. Enquiry saved but no notification sent."
+      "[EMAIL BYPASSED] SMTP credentials are not configured. Enquiry saved but no notification sent.",
     );
     return;
   }
@@ -173,8 +185,13 @@ This inquiry was saved to the database. Reply to this email to contact the user 
 
   try {
     const info = await transporter.sendMail(mailOptions);
-    console.log(`[EMAIL SENT] Notification sent successfully! MessageId: ${info.messageId}`);
+    console.log(
+      `[EMAIL SENT] Notification sent successfully! MessageId: ${info.messageId}`,
+    );
   } catch (error) {
-    console.error("Error dispatching enquiry notification email via SMTP:", error);
+    console.error(
+      "Error dispatching enquiry notification email via SMTP:",
+      error,
+    );
   }
 }
