@@ -1,0 +1,17 @@
+{
+  "node": {
+    "60fd6ce33e95ed9db7066bd28729c8712f28987b64": {
+      "workers": {
+        "app/contact/page": {
+          "moduleId": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CJaenly-JE%5C%5Cactions%5C%5CsubmitForm.ts%22%2C%5B%7B%22id%22%3A%2260fd6ce33e95ed9db7066bd28729c8712f28987b64%22%2C%22exportedName%22%3A%22submitForm%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/contact/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "cmRWP4eGUn9xz4xG9I50rHDcxiBXl2ks27a2pkOjjmo="
+}
