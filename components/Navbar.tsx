@@ -26,7 +26,7 @@ export function PeacockLogo({
           transition={{ type: "spring", stiffness: 300, damping: 15 }}
         >
           <img
-            src="/logo.png"
+            src="/logof.png"
             alt="Jaenly Logo"
             className="h-full w-full bg-white rounded-2xl object-contain"
             referrerPolicy="no-referrer"
