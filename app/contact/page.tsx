@@ -25,7 +25,7 @@ export default function ContactPage() {
             </span>
           </h2>
           <p className="mt-4 text-gray-700 text-sm sm:text-base leading-relaxed">
-            Have an enquiry, sourcing project, or consulting requirement? Fill out the
+            Have a business inquiry or looking for a reliable trading and sourcing partner? We'd love to hear from you.? Fill out the
             contact form below and our partnerships desk will get back to you within 24
             working hours.
           </p>

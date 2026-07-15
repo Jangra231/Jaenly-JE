@@ -12,7 +12,10 @@ const initialState: FormState = {
 };
 
 export default function ContactForm() {
-  const [state, formAction, isPending] = useActionState(submitForm, initialState);
+  const [state, formAction, isPending] = useActionState(
+    submitForm,
+    initialState,
+  );
   const [toast, setToast] = useState<FormState | null>(null);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const searchParams = useSearchParams();
@@ -65,11 +68,15 @@ export default function ContactForm() {
           Submit Sourcing RFQ / Enquiry
         </h3>
         <p className="text-xs text-gray-500 mb-6 font-normal">
-          Fields marked with <span className="text-rose-500">*</span> are mandatory for
-          validation.
+          Fields marked with <span className="text-rose-500">*</span> are
+          mandatory for validation.
         </p>
 
-        <form action={formAction} className="flex flex-col gap-5" id="enquiry-contact-form">
+        <form
+          action={formAction}
+          className="flex flex-col gap-5"
+          id="enquiry-contact-form"
+        >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div className="flex flex-col gap-1.5">
               <label
@@ -84,11 +91,15 @@ export default function ContactForm() {
                 name="name"
                 placeholder="e.g. Anand Sharma"
                 className={`w-full px-4 py-3 bg-white border rounded-xl focus:outline-none focus:border-[#0A0A0A] text-sm text-[#0A0A0A] font-medium transition-all ${
-                  errors.name ? "border-rose-400 focus:border-rose-500" : "border-[#0A0A0A]/15"
+                  errors.name
+                    ? "border-rose-400 focus:border-rose-500"
+                    : "border-[#0A0A0A]/15"
                 }`}
               />
               {errors.name && (
-                <p className="text-[10px] text-rose-500 font-bold mt-0.5">{errors.name}</p>
+                <p className="text-[10px] text-rose-500 font-bold mt-0.5">
+                  {errors.name}
+                </p>
               )}
             </div>
 
@@ -105,11 +116,15 @@ export default function ContactForm() {
                 name="email"
                 placeholder="e.g. anand@company.com"
                 className={`w-full px-4 py-3 bg-white border rounded-xl focus:outline-none focus:border-[#0A0A0A] text-sm text-[#0A0A0A] font-medium transition-all ${
-                  errors.email ? "border-rose-400 focus:border-rose-500" : "border-[#0A0A0A]/15"
+                  errors.email
+                    ? "border-rose-400 focus:border-rose-500"
+                    : "border-[#0A0A0A]/15"
                 }`}
               />
               {errors.email && (
-                <p className="text-[10px] text-rose-500 font-bold mt-0.5">{errors.email}</p>
+                <p className="text-[10px] text-rose-500 font-bold mt-0.5">
+                  {errors.email}
+                </p>
               )}
             </div>
           </div>
@@ -153,7 +168,8 @@ export default function ContactForm() {
               htmlFor="contact-subject"
               className="text-xs font-bold tracking-wide font-mono uppercase text-gray-500"
             >
-              Enquiry Subject / Category <span className="text-rose-500">*</span>
+              Enquiry Subject / Category{" "}
+              <span className="text-rose-500">*</span>
             </label>
             <select
               id="contact-subject"
@@ -161,11 +177,13 @@ export default function ContactForm() {
               defaultValue={presetSubject}
               className="w-full px-4 py-3 bg-white border border-[#0A0A0A]/15 rounded-xl focus:outline-none focus:border-[#0A0A0A] text-sm text-[#0A0A0A] font-bold transition-all"
             >
-              <option value="general">General Business Proposal</option>
-              <option value="lead-generation">Lead Generation Matchmaking</option>
-              <option value="trading">Trading Sourcing project</option>
-              <option value="supply-chain">Supply Chain Logistics Solutions</option>
-              <option value="industrial-solutions">Industrial Sourcing & Automation</option>
+              <option value="trading">Global Trading</option>
+              <option value="lead-generation">Digital Lead Generation</option>
+              <option value="general">Product Marketing</option>
+              <option value="supply-chain">Business Partnerships</option>
+              <option value="industrial-solutions">
+                Industrial Sourcing & Automation
+              </option>
               <option value="consulting">Consulting advisory</option>
             </select>
           </div>
@@ -183,11 +201,15 @@ export default function ContactForm() {
               rows={4}
               placeholder="Describe your specific specifications, target timeline, or procurement volume..."
               className={`w-full px-4 py-3 bg-white border rounded-xl focus:outline-none focus:border-[#0A0A0A] text-sm text-[#0A0A0A] font-medium transition-all ${
-                errors.message ? "border-rose-400 focus:border-rose-500" : "border-[#0A0A0A]/15"
+                errors.message
+                  ? "border-rose-400 focus:border-rose-500"
+                  : "border-[#0A0A0A]/15"
               }`}
             />
             {errors.message && (
-              <p className="text-[10px] text-rose-500 font-bold mt-0.5">{errors.message}</p>
+              <p className="text-[10px] text-rose-500 font-bold mt-0.5">
+                {errors.message}
+              </p>
             )}
           </div>
 

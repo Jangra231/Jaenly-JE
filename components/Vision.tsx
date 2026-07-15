@@ -32,10 +32,10 @@ export default function Vision() {
         </div>
 
         <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-8 max-w-3xl font-medium">
-          &quot;To be a globally respected, sustainable enterprise known for creating
-          long-term value, building lifelong trust, and empowering businesses for the
-          future. We actively innovate to make global commodity trading fully
-          carbon-neutral and green.&quot;
+          &quot;To be a globally respected, sustainable enterprise known for
+          creating long-term value, building lifelong trust, and empowering
+          businesses for the future. We actively innovate to make global
+          commodity trading fully carbon-neutral and green.&quot;
         </p>
 
         <div className="border-t border-[#0A0A0A]/10 pt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -45,8 +45,7 @@ export default function Vision() {
               Fully Green Trading
             </h4>
             <p className="text-xs text-gray-600 leading-relaxed font-normal">
-              A commitment to tracking carbon indices on shipping lanes and selecting
-              certified carbon-offset raw materials.
+              A commitment to tracking carbon indices on shipping lanes and selecting certified carbon-offset raw materials.
             </p>
           </div>
           <div className="bg-[#FCFCFC]/50 p-6 rounded-2xl border border-[#0A0A0A]/5">
@@ -55,8 +54,7 @@ export default function Vision() {
               Dynamic Value Creation
             </h4>
             <p className="text-xs text-gray-600 leading-relaxed font-normal">
-              Expanding beyond generic transaction brokering to develop full-funnel
-              lead curation, active verification, and legal clearing.
+              Expanding beyond generic transaction brokering to develop full-funnel lead curation, active verification, and legal clearing.
             </p>
           </div>
           <div className="bg-[#FCFCFC]/50 p-6 rounded-2xl border border-[#0A0A0A]/5">
@@ -65,10 +63,10 @@ export default function Vision() {
               Future-Proof Networks
             </h4>
             <p className="text-xs text-gray-600 leading-relaxed font-normal">
-              Deploying real-time monitoring and robust supply networks that bypass
-              high-tariff shipping disruptions dynamically.
+              Deploying real-time monitoring and robust supply networks that bypass high-tariff shipping disruptions dynamically.
             </p>
           </div>
+          
         </div>
       </div>
 
@@ -79,34 +77,47 @@ export default function Vision() {
             Ecological & Global Standards
           </h3>
           <p className="text-xs text-gray-500 mb-6 leading-relaxed">
-            We operate in perfect alignment with international standards and continue to
-            secure credentials that validate our corporate integrity.
+            We operate in perfect alignment with international standards and
+            continue to secure credentials that validate our corporate
+            integrity.
           </p>
 
           <div className="space-y-4 text-xs sm:text-sm">
             <div className="flex justify-between py-2.5 border-b border-gray-100 items-center">
               <span className="text-gray-600 font-semibold flex items-center gap-2">
-                <Leaf size={16} className="text-[#0A0A0A]" /> Eco-certified Sourcing
+                <Leaf size={16} className="text-[#0A0A0A]" /> Eco-certified
+                Sourcing
               </span>
-              <span className="font-extrabold text-[#0A0A0A]">FSC & REACH Compliant</span>
+              <span className="font-extrabold text-[#0A0A0A]">
+                FSC & REACH Compliant
+              </span>
             </div>
             <div className="flex justify-between py-2.5 border-b border-gray-100 items-center">
               <span className="text-gray-600 font-semibold flex items-center gap-2">
-                <Sparkles size={16} className="text-[#0A0A0A]" /> Technology Integration
+                <Sparkles size={16} className="text-[#0A0A0A]" /> Technology
+                Integration
               </span>
-              <span className="font-extrabold text-[#0A0A0A]">Smart Portal Trackers</span>
+              <span className="font-extrabold text-[#0A0A0A]">
+                Smart Portal Trackers
+              </span>
             </div>
             <div className="flex justify-between py-2.5 border-b border-gray-100 items-center">
               <span className="text-gray-600 font-semibold flex items-center gap-2">
-                <Globe size={16} className="text-[#0A0A0A]" /> Interconnected Hubs
+                <Globe size={16} className="text-[#0A0A0A]" /> Interconnected
+                Hubs
               </span>
-              <span className="font-extrabold text-[#0A0A0A]">Asia, MEA & Europe</span>
+              <span className="font-extrabold text-[#0A0A0A]">
+                Asia, MEA & Europe
+              </span>
             </div>
             <div className="flex justify-between py-2.5 border-b border-gray-100 items-center">
               <span className="text-gray-600 font-semibold flex items-center gap-2">
-                <Award size={16} className="text-[#0A0A0A]" /> Quality Auditing Protocol
+                <Award size={16} className="text-[#0A0A0A]" /> Quality Auditing
+                Protocol
               </span>
-              <span className="font-extrabold text-emerald-600">ISO 9001:2015 Approved</span>
+              <span className="font-extrabold text-emerald-600">
+                ISO 9001:2015 Approved
+              </span>
             </div>
           </div>
         </div>
@@ -115,16 +126,17 @@ export default function Vision() {
           <div className="absolute top-0 right-0 w-24 h-24 bg-[#056D34]/10 rounded-bl-full pointer-events-none" />
 
           <div>
-            <span className="text-[10px] font-mono font-bold tracking-widest text-[#056D34]">
+            <span className="text-[10px] font-mono font-bold tracking-widest text-[#058e43]">
               A SUSTAINABLE FORECAST
             </span>
             <h3 className="font-display font-black text-2xl text-white mt-2 mb-4">
               Building the Future of Sourcing
             </h3>
             <p className="text-xs sm:text-sm text-gray-300 leading-relaxed font-normal">
-              Our vision guides us to actively minimize the ecological footprint of bulk
-              freight operations. We work in real-time with carbon-offset registries to
-              ensure that our supply channels support local reforestation projects.
+              Our vision guides us to actively minimize the ecological footprint
+              of bulk freight operations. We work in real-time with
+              carbon-offset registries to ensure that our supply channels
+              support local reforestation projects.
             </p>
           </div>
 

@@ -1,7 +1,7 @@
 import { Service, TimelineEvent, CoreValue } from "@/types";
 
 export const SERVICES_DATA: Service[] = [
-  {
+  /*{
     id: "consulting",
     title: "Branding & Consulting",
     description:
@@ -13,30 +13,33 @@ export const SERVICES_DATA: Service[] = [
       "Regulatory compliance audit",
     ],
     iconName: "MessageSquare",
-  },
+  },*/
   {
     id: "lead-generation",
-    title: "Digital Lead Generation",
+    title: "Digital Lead Generation for Industries",
     description:
-      "We connect opportunities with potential, driving measurable business growth.",
+      "Generate qualified business leads by connecting with buyers, distributors, and business partners through digital platforms.",
     details: [
-      "B2B matchmaking & prospecting",
-      "Targeted campaign management",
-      "Qualified lead qualification",
-      "Sales channel development",
+      "B2B lead generation",
+      "Buyer identification & outreach",
+      "International business enquiries",
+      "Digital marketing for industrial projects",
+      "Business networking and market expansion",
+      "Qualified sales lead support",
     ],
     iconName: "Magnet",
   },
   {
     id: "trading",
-    title: "Trading & Sourcing",
+    title: "Digital Product Trading & Marketing",
     description:
-      "Global trade solutions delivering value, reliability, and trust across borders.",
+      "Promote and sell your products online to reach a wider audience and create new business opportunities worldwide.",
     details: [
-      "Global supply chain networks",
-      "Commodity trading & logistics",
-      "Quality assurance inspections",
-      "Trade compliance advisory",
+      "Product promotion on digital platforms",
+      "Online product marketing",
+      "Global buyer sourcing",
+      "Sales opportunity development",
+      "Digital business representation",
     ],
     iconName: "Globe",
   },
@@ -75,29 +78,29 @@ export const TIMELINE_DATA: TimelineEvent[] = [
 
 export const CORE_VALUES: CoreValue[] = [
   {
-    title: "Integrity in Every Action",
+    title: "Integrity & Transparency",
     description:
       "We believe transparent and honest dealing forms the ultimate bedrock of business relations.",
   },
   {
-    title: "Excellence in Execution",
+    title: "Quality and Reliability",
     description:
-      "We strive for pristine precision, high speed, and flawless quality in every supply chain link.",
+      "We deliver consistent quality and dependable solutions you can always trust.",
   },
   {
-    title: "Collaboration in Spirit",
+    title: "Customer First Approach",
     description:
-      "We treat clients, vendors, and stakeholders as integrated partners in joint long-term success.",
+      "We put customer needs first by delivering value with every interaction.",
   },
   {
-    title: "Innovation in Approach",
+    title: "Global Connectivity",
     description:
-      "We leverage modern intelligence, tracking software, and green tech for legacy challenges.",
+      "We connect businesses worldwide through trusted trade and reliable networks.",
   },
   {
-    title: "Impact in Everything We Do",
+    title: "Long-Term Business Partnerships",
     description:
-      "We ensure our business footprint builds up communities, protects environments, and drives growth.",
+      "We build lasting partnerships based on trust, growth, and shared success.",
   },
 ];
 

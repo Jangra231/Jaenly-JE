@@ -12,8 +12,12 @@ export default function ContactInfo() {
             <span className="text-[10px] tracking-widest font-mono font-bold text-gray-500 uppercase">
               Phone Sourcing
             </span>
-            <p className="text-sm font-bold text-[#0A0A0A] mt-1">+91 70856 95801</p>
-            <p className="text-xs text-gray-500 font-medium">Mon-Fri, 9:00 AM - 6:00 PM IST</p>
+            <p className="text-sm font-bold text-[#0A0A0A] mt-1">
+              +91 70856 95801
+            </p>
+            <p className="text-xs text-gray-500 font-medium">
+              Mon-Fri, 9:00 AM - 6:00 PM IST
+            </p>
           </div>
         </div>
 
@@ -26,9 +30,11 @@ export default function ContactInfo() {
               Corporate Mail
             </span>
             <p className="text-sm font-bold text-[#0A0A0A] mt-1">
-              info@jagdambaenterprises.com
+              info@jaenly.com
             </p>
-            <p className="text-xs text-gray-500 font-medium font-sans">Send RFCs or proposal bids</p>
+            <p className="text-xs text-gray-500 font-medium font-sans">
+              Send RFCs or proposal bids
+            </p>
           </div>
         </div>
 
@@ -42,7 +48,8 @@ export default function ContactInfo() {
             </span>
             <p className="text-sm font-bold text-white mt-1">Hissar, Haryana</p>
             <p className="text-xs text-gray-400 leading-relaxed mt-1.5 font-medium">
-              503, Heritage Horizon, Bhavani Shankar Road, Dadar (West), Mumbai. <br />
+              Office No. 1890/10, Jahajpul Road Hisar – 125001, Haryana, India{" "}
+              <br />
               <span className="text-gray-500 font-semibold font-mono text-[10px] tracking-wider">
                 SECONDARY BRANCH:
               </span>{" "}
@@ -78,7 +85,7 @@ export default function ContactInfo() {
               Jagdamba Enterprises
             </h4>
             <p className="text-[9px] sm:text-[10px] text-gray-300 leading-normal mt-1">
-              503, Heritage Horizon, Bhavani Shankar Road, Dadar (West), Mumbai - 400028
+              Office No. 1890/10, Jahajpul Road Hisar – 125001, Haryana, India
             </p>
           </div>
 

@@ -21,7 +21,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-3 bg-white border border-[#0A0A0A]/5 px-4 py-2 rounded-full shadow-sm">
             <span className="w-2 h-2 rounded-full bg-[#056D34] animate-pulse" />
             <span className="text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#0A0A0A]/80 uppercase font-mono">
-              EMPOWERING GLOBAL B2B LOGISTICS SINCE 2023
+              Connecting Businesses Through Digital Trade
             </span>
           </div>
 
@@ -36,10 +36,10 @@ export default function Hero() {
           </h1>
 
           <p className="text-gray-700 text-sm sm:text-lg max-w-2xl leading-relaxed font-normal mt-2">
-            Jagdamba Enterprises is a premier global trading, bulk procurement, and
-            industrial sourcing house. We engineer seamless cross-border logistics,
-            supply high-grade raw materials, and navigate customs compliance with
-            strict integrity and performance.
+            Jaenly is a brand of Jagdamba Enterprises, established in 2023 with
+            a vision to simplify global trade through digital platforms. We help
+            businesses connect with buyers, source quality products, and expand
+            into new markets through reliable trading and marketing solutions.
           </p>
 
           <div className="grid grid-cols-3 gap-8 sm:gap-16 border-t border-b border-[#0a0a0a]/10 py-6 my-4 w-full max-w-2xl">

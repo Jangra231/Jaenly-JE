@@ -151,9 +151,7 @@ export default function About() {
                   Our Mission
                 </h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  To deliver integrated solutions that drive business growth through
-                  strategic partnerships, innovation, and unwavering commitment. We
-                  provide seamless, risk-free trade setups.
+                  To empower businesses worldwide by delivering reliable global trading and industrial sourcing solutions that create value, promote sustainable growth, and build lasting partnerships.
                 </p>
               </div>
               <div className="absolute right-6 top-6 sm:top-auto sm:bottom-6 w-8 h-8 rounded-full bg-[#FCFCFC] border border-[#0A0A0A]/10 flex items-center justify-center text-[#0A0A0A] group-hover:bg-[#056D34] group-hover:text-white transition-all">
@@ -182,9 +180,7 @@ export default function About() {
                   Our Vision
                 </h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  To be a globally respected enterprise known for creating value,
-                  building trust, and empowering businesses for the future. We aspire
-                  to make trading fully green.
+                  To become a trusted global brand recognized for excellence in international trade, innovative sourcing solutions, and customer-centric services.
                 </p>
               </div>
               <div className="absolute right-6 top-6 sm:top-auto sm:bottom-6 w-8 h-8 rounded-full bg-[#FCFCFC] border border-[#0A0A0A]/10 flex items-center justify-center text-[#0A0A0A] group-hover:bg-[#056D34] group-hover:text-white transition-all">

@@ -15,11 +15,18 @@ import {
   ShieldCheck,
   Leaf,
   X,
+  Globe2,
+  PackageCheck,
+  BriefcaseBusiness,
+  Users,
 } from "lucide-react";
+
 import { SERVICES_DATA } from "@/lib/data";
 
 export default function Services() {
-  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
+  const [selectedServiceId, setSelectedServiceId] = useState<string | null>(
+    null,
+  );
 
   const getIcon = (name: string, size = 28) => {
     switch (name) {
@@ -122,9 +129,21 @@ export default function Services() {
               fill="none"
             >
               <circle cx="50" cy="50" r="36" stroke="#0A0A0A" strokeWidth="2" />
-              <path d="M 14 50 A 36 36 0 0 0 86 50" stroke="#056D34" strokeWidth="1.5" />
-              <path d="M 14 50 A 36 12 0 0 0 86 50" stroke="#0A0A0A" strokeWidth="1" />
-              <path d="M 50 14 A 12 36 0 0 0 50 86" stroke="#056D34" strokeWidth="1" />
+              <path
+                d="M 14 50 A 36 36 0 0 0 86 50"
+                stroke="#056D34"
+                strokeWidth="1.5"
+              />
+              <path
+                d="M 14 50 A 36 12 0 0 0 86 50"
+                stroke="#0A0A0A"
+                strokeWidth="1"
+              />
+              <path
+                d="M 50 14 A 12 36 0 0 0 50 86"
+                stroke="#056D34"
+                strokeWidth="1"
+              />
               <circle cx="35" cy="24" r="3" fill="#0A0A0A" />
               <circle
                 cx="65"
@@ -181,7 +200,10 @@ export default function Services() {
   const selectedService = SERVICES_DATA.find((s) => s.id === selectedServiceId);
 
   return (
-    <section id="services" className="py-24 bg-[#FCFCFC] relative overflow-hidden">
+    <section
+      id="services"
+      className="py-24 bg-[#FCFCFC] relative overflow-hidden"
+    >
       <div className="absolute top-1/3 left-0 w-96 h-96 bg-[#056D34]/10 rounded-full filter blur-[100px] pointer-events-none" />
       <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-[#0a0a0a]/5 rounded-full filter blur-[100px] pointer-events-none" />
 
@@ -204,9 +226,12 @@ export default function Services() {
             </span>
           </h2>
           <p className="mt-4 text-gray-700 text-sm sm:text-base leading-relaxed">
-            At Jagdamba Enterprises, our services are designed to drive growth,
-            foster connections, and build sustainable futures across energy, trade,
-            packaging, and logistics.
+            Our expertise lies in global trading and industrial sourcing,
+            enabling our clients to access quality products at competitive
+            prices while maintaining high standards of professionalism,
+            transparency, and customer satisfaction. We simplify global commerce
+            by providing dependable sourcing services and creating opportunities
+            for businesses to expand beyond borders.
           </p>
         </div>
 
@@ -267,26 +292,133 @@ export default function Services() {
         >
           <div className="flex flex-col items-center gap-2">
             <CheckCircle2 size={24} className="text-[#056D34]" />
-            <span className="text-xs sm:text-sm font-bold tracking-wide">Client-Centric</span>
+            <span className="text-xs sm:text-sm font-bold tracking-wide">
+              Client-Centric
+            </span>
           </div>
           <div className="flex flex-col items-center gap-2 border-l border-white/10">
             <ShieldCheck size={24} className="text-[#056D34]" />
-            <span className="text-xs sm:text-sm font-bold tracking-wide">Trusted Partnerships</span>
+            <span className="text-xs sm:text-sm font-bold tracking-wide">
+              Trusted Partnerships
+            </span>
           </div>
           <div className="flex flex-col items-center gap-2 border-l border-white/10">
             <Leaf size={24} className="text-[#056D34]" />
-            <span className="text-xs sm:text-sm font-bold tracking-wide">Sustainable Impact</span>
+            <span className="text-xs sm:text-sm font-bold tracking-wide">
+              Sustainable Impact
+            </span>
           </div>
           <div className="flex flex-col items-center gap-2 border-l border-white/10">
             <Globe size={24} className="text-[#056D34]" />
-            <span className="text-xs sm:text-sm font-bold tracking-wide">Global Sourcing</span>
+            <span className="text-xs sm:text-sm font-bold tracking-wide">
+              Global Sourcing
+            </span>
           </div>
           <div className="flex flex-col items-center gap-2 border-l border-white/10 col-span-2 md:col-span-1">
             <TrendingUp size={24} className="text-[#056D34]" />
-            <span className="text-xs sm:text-sm font-bold tracking-wide">Results Driven</span>
+            <span className="text-xs sm:text-sm font-bold tracking-wide">
+              Results Driven
+            </span>
           </div>
         </div>
       </div>
+
+
+      {/* ================= Why Choose Us ================= */}
+<section className="py-20 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    {/* Heading */}
+    <div className="max-w-3xl mx-auto text-center">
+      <span className="inline-flex items-center rounded-full bg-[#056D34] px-4 py-2 text-sm font-semibold text-white">
+        Why Choose Us
+      </span>
+
+      <h2 className="mt-5 text-4xl font-bold text-gray-900">
+        Why Choose <span className="text-[#056D34]">Jaenly?</span>
+      </h2>
+
+      <p className="mt-4 text-lg text-gray-600">
+        Trusted global trade and sourcing solutions designed to help your
+        business grow with confidence.
+      </p>
+    </div>
+
+    {/* Cards */}
+    <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      {[
+        {
+          title: "Global Business Network",
+          description:
+            "Connecting businesses with trusted partners worldwide.",
+          icon: Globe2,
+        },
+        {
+          title: "Reliable Sourcing",
+          description: "Quality products sourced from verified suppliers.",
+          icon: PackageCheck,
+        },
+        {
+          title: "Lead Generation",
+          description: "Helping businesses discover valuable opportunities.",
+          icon: BriefcaseBusiness,
+        },
+        {
+          title: "Transparency",
+          description: "Honest communication and ethical business practices.",
+          icon: ShieldCheck,
+        },
+        {
+          title: "Customer First",
+          description: "Tailored solutions focused on your business success.",
+          icon: Users,
+        },
+      ].map((item) => {
+        const Icon = item.icon;
+
+        return (
+          <div
+            key={item.title}
+            className="group rounded-2xl border border-gray-200 bg-white p-6 transition-all duration-300 hover:-translate-y-2 hover:border-green-500 hover:shadow-2xl"
+          >
+            <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-green-100 transition-all duration-300 group-hover:bg-[#056D34]">
+              <Icon className="h-7 w-7 text-green-600 transition-all duration-300 group-hover:text-white" />
+            </div>
+
+            <h3 className="mt-6 text-lg font-semibold text-gray-900">
+              {item.title}
+            </h3>
+
+            <p className="mt-3 text-sm leading-6 text-gray-600">
+              {item.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
+
+    {/* Bottom CTA */}
+    <div className="mt-16 text-center">
+      <p className="text-lg text-gray-700">
+        Ready to expand your business through{" "}
+        <span className="font-semibold text-[#056D34]">
+          trusted global trade
+        </span>{" "}
+        and{" "}
+        <span className="font-semibold text-[#056D34]">
+          reliable sourcing solutions?
+        </span>
+      </p>
+
+      <a
+        href="/contact"
+        className="mt-8 inline-flex items-center rounded-xl bg-[#056D34] px-8 py-4 text-white font-semibold transition hover:bg-black"
+      >
+        Get in Touch
+      </a>
+    </div>
+  </div>
+</section>
+
 
       <AnimatePresence>
         {selectedService && (
@@ -340,7 +472,10 @@ export default function Services() {
                       key={idx}
                       className="flex gap-2 items-center bg-white border border-[#0A0A0A]/5 px-4 py-3 rounded-xl"
                     >
-                      <CheckCircle2 size={16} className="text-[#0A0A0A] shrink-0" />
+                      <CheckCircle2
+                        size={16}
+                        className="text-[#0A0A0A] shrink-0"
+                      />
                       <span className="text-xs sm:text-sm font-medium text-gray-800">
                         {detail}
                       </span>
